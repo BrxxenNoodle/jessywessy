@@ -67,7 +67,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../Bow.png');
+    background-image: url('../bow.png');
     background-size: 50px 50px; /* Adjust size for better spacing */
     background-repeat: repeat;
     background-position: 0 0;

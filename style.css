@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+html {
+    font-family: 'Patrick Hand', cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 300%;
+}
+
+.body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.valentine {
+    font-size: 200%;
+    text-align: center;
+}
+
+#message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #a70000;
+    text-align: center;
+    display: none; /* Initially hidden */
+    opacity: 0; /* Starts fully transparent */
+    transition: opacity 1s ease-in-out;
+}
+
+.center {
+    text-align: center;
+}
+
+.hello_kitty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.hello_kitty_img {
+    width: 20%;
+    height: auto;
+    margin-top: 5%;
+}
+
+body {
+    background-color: #ffc0cb;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Bow.png');
+    background-size: 50px 50px; /* Adjust size for better spacing */
+    background-repeat: repeat;
+    background-position: 0 0;
+    opacity: 0.1;
+    animation: scrollBackground 20s linear infinite;
+    z-index: -1;
+}
+
+.bow_container {
+    opacity: 0%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.yes {
+    margin-right: 50px;
+    background-color: rgb(97, 247, 97);
+}
+
+.no {
+    margin-left: 50px;
+    background-color: rgb(247, 97, 97);
+}
+
+.yes:hover, .no:hover {
+    opacity: 80%;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes scrollBackground {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 200%;
+    }
+    .valentine {
+        font-size: 150%;
+    }
+    .hello_kitty_img {
+        width: 40%;
+    }
+    .button {
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .yes {
+        margin-right: 20px;
+    }
+    .no {
+        margin-left: 20px;
+    }
+    /* General Mobile Adjustments */
+    .title {
+        font-size: 2rem;
+        margin-bottom: 3%;
+    }
+    
+    .valentine {
+        font-size: 1.5rem;
+    }
+    
+    .hello_kitty_img {
+        width: 60%;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+
+    .yes, .no {
+        margin: 10px 0; /* Stack buttons with spacing */
+        width: 60%; /* Make them easier to tap */
+    }
+    
+    .button {
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .paragraph, .paragraph-2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .car {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>For Jess <3</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <audio id="background-music" autoplay loop>
+        <source src="Bossa.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="everything">
+        <div class="content-container">
+            <h1 class="title">
+                WELCOME to the Jess fan page!
+            </h1>
+            <p class="center valentine">
+                Do you want to be my valentine?
+            </p>
+            
+            <!-- Add Hello Kitty image here -->
+            <div class="hello_kitty">
+                <img src="Hello kitty.png" class="hello_kitty_img">
+            </div>
+    
+            <div class="buttons-container">
+                <p id="message" class="hidden">You can't say no</p>
+    
+                <div class="buttons">
+                    <button class="button yes">Yes</button>
+                    <button class="button no">No</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Adding Bow.png explicitly as a background (not on screen as an image) -->
+        <div class="bow_container">
+            <img src="Bow.png" class="bow_img">
+        </div>
+    
+        <script>
+            // Reference the audio element
+            const audio = document.getElementById("background-music");
+    
+            // Add an event listener for when the audio ends
+            audio.addEventListener('ended', function() {
+                // Redirect to another page after the audio finishes
+                window.location.href = "yes.html"; // Change this to the URL you want to navigate to
+            });
+        </script>
+    </div>
+    
+</body>
+</html>
